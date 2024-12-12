@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/search_engine
+CMAKE_SOURCE_DIR = /root/search-engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/search_engine/build
+CMAKE_BINARY_DIR = /root/search-engine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/search_engine/build/CMakeFiles /root/search_engine/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/search-engine/build/CMakeFiles /root/search-engine/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/search_engine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/search-engine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ search_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/build
 .PHONY : search_engine/fast
 
+src/inverted_index.o: src/inverted_index.cpp.o
+.PHONY : src/inverted_index.o
+
+# target to build an object file
+src/inverted_index.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/src/inverted_index.cpp.o
+.PHONY : src/inverted_index.cpp.o
+
+src/inverted_index.i: src/inverted_index.cpp.i
+.PHONY : src/inverted_index.i
+
+# target to preprocess a source file
+src/inverted_index.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/src/inverted_index.cpp.i
+.PHONY : src/inverted_index.cpp.i
+
+src/inverted_index.s: src/inverted_index.cpp.s
+.PHONY : src/inverted_index.s
+
+# target to generate assembly for a file
+src/inverted_index.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/src/inverted_index.cpp.s
+.PHONY : src/inverted_index.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... search_engine"
+	@echo "... src/inverted_index.o"
+	@echo "... src/inverted_index.i"
+	@echo "... src/inverted_index.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

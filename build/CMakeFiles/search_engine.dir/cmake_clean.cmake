@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/search_engine.dir/src/inverted_index.cpp.o"
+  "CMakeFiles/search_engine.dir/src/inverted_index.cpp.o.d"
   "CMakeFiles/search_engine.dir/src/main.cpp.o"
   "CMakeFiles/search_engine.dir/src/main.cpp.o.d"
   "search_engine"

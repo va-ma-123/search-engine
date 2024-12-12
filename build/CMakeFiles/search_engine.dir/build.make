@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/search_engine
+CMAKE_SOURCE_DIR = /root/search-engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/search_engine/build
+CMAKE_BINARY_DIR = /root/search-engine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/search_engine.dir/depend.make
@@ -70,30 +70,46 @@ include CMakeFiles/search_engine.dir/progress.make
 include CMakeFiles/search_engine.dir/flags.make
 
 CMakeFiles/search_engine.dir/src/main.cpp.o: CMakeFiles/search_engine.dir/flags.make
-CMakeFiles/search_engine.dir/src/main.cpp.o: /root/search_engine/src/main.cpp
+CMakeFiles/search_engine.dir/src/main.cpp.o: /root/search-engine/src/main.cpp
 CMakeFiles/search_engine.dir/src/main.cpp.o: CMakeFiles/search_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/search_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/search_engine.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/search_engine.dir/src/main.cpp.o -MF CMakeFiles/search_engine.dir/src/main.cpp.o.d -o CMakeFiles/search_engine.dir/src/main.cpp.o -c /root/search_engine/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/search-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/search_engine.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/search_engine.dir/src/main.cpp.o -MF CMakeFiles/search_engine.dir/src/main.cpp.o.d -o CMakeFiles/search_engine.dir/src/main.cpp.o -c /root/search-engine/src/main.cpp
 
 CMakeFiles/search_engine.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/search_engine/src/main.cpp > CMakeFiles/search_engine.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/search-engine/src/main.cpp > CMakeFiles/search_engine.dir/src/main.cpp.i
 
 CMakeFiles/search_engine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/search_engine/src/main.cpp -o CMakeFiles/search_engine.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/search-engine/src/main.cpp -o CMakeFiles/search_engine.dir/src/main.cpp.s
+
+CMakeFiles/search_engine.dir/src/inverted_index.cpp.o: CMakeFiles/search_engine.dir/flags.make
+CMakeFiles/search_engine.dir/src/inverted_index.cpp.o: /root/search-engine/src/inverted_index.cpp
+CMakeFiles/search_engine.dir/src/inverted_index.cpp.o: CMakeFiles/search_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/search-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/search_engine.dir/src/inverted_index.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/search_engine.dir/src/inverted_index.cpp.o -MF CMakeFiles/search_engine.dir/src/inverted_index.cpp.o.d -o CMakeFiles/search_engine.dir/src/inverted_index.cpp.o -c /root/search-engine/src/inverted_index.cpp
+
+CMakeFiles/search_engine.dir/src/inverted_index.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/src/inverted_index.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/search-engine/src/inverted_index.cpp > CMakeFiles/search_engine.dir/src/inverted_index.cpp.i
+
+CMakeFiles/search_engine.dir/src/inverted_index.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/src/inverted_index.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/search-engine/src/inverted_index.cpp -o CMakeFiles/search_engine.dir/src/inverted_index.cpp.s
 
 # Object files for target search_engine
 search_engine_OBJECTS = \
-"CMakeFiles/search_engine.dir/src/main.cpp.o"
+"CMakeFiles/search_engine.dir/src/main.cpp.o" \
+"CMakeFiles/search_engine.dir/src/inverted_index.cpp.o"
 
 # External object files for target search_engine
 search_engine_EXTERNAL_OBJECTS =
 
 search_engine: CMakeFiles/search_engine.dir/src/main.cpp.o
+search_engine: CMakeFiles/search_engine.dir/src/inverted_index.cpp.o
 search_engine: CMakeFiles/search_engine.dir/build.make
 search_engine: CMakeFiles/search_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/search_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable search_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/search-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable search_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/search_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +121,6 @@ CMakeFiles/search_engine.dir/clean:
 .PHONY : CMakeFiles/search_engine.dir/clean
 
 CMakeFiles/search_engine.dir/depend:
-	cd /root/search_engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/search_engine /root/search_engine /root/search_engine/build /root/search_engine/build /root/search_engine/build/CMakeFiles/search_engine.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /root/search-engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/search-engine /root/search-engine /root/search-engine/build /root/search-engine/build /root/search-engine/build/CMakeFiles/search_engine.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/search_engine.dir/depend
 

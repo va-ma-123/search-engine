@@ -4,6 +4,8 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <thread>
+#include <mutex>
 
 class InvertedIndex {
 public:
@@ -16,7 +18,9 @@ public:
 private:
     // The data structure used is a map
     // Each term is a key, and the values are list of document IDs that contain the term
-    std::unordered_map<std::string, std::vector<int>> index;
+    mutable std::unordered_map<std::string, std::vector<int>> index;
+    mutable std::mutex index_mutex; // mutex is for thread safety
+    void processWord(int docId, const std::string& word);
 };
 
 #endif

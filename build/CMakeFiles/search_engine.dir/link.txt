@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/search_engine.dir/src/main.cpp.o CMakeFiles/search_engine.dir/src/inverted_index.cpp.o -o search_engine
+/usr/bin/g++ -g CMakeFiles/search_engine.dir/src/main.cpp.o CMakeFiles/search_engine.dir/src/inverted_index.cpp.o CMakeFiles/search_engine.dir/src/bm25.cpp.o -o search_engine  -lpthread

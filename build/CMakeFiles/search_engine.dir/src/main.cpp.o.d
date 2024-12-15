@@ -118,4 +118,17 @@ CMakeFiles/search_engine.dir/src/main.cpp.o: \
  /usr/include/c++/13.2.1/ctime \
  /usr/include/c++/13.2.1/bits/parse_numbers.h \
  /usr/include/c++/13.2.1/mutex /usr/include/c++/13.2.1/bits/std_mutex.h \
- /usr/include/c++/13.2.1/bits/unique_lock.h
+ /usr/include/c++/13.2.1/bits/unique_lock.h /usr/include/c++/13.2.1/cmath \
+ /usr/include/math.h /usr/include/c++/13.2.1/bits/specfun.h \
+ /usr/include/c++/13.2.1/tr1/gamma.tcc \
+ /usr/include/c++/13.2.1/tr1/special_function_util.h \
+ /usr/include/c++/13.2.1/tr1/bessel_function.tcc \
+ /usr/include/c++/13.2.1/tr1/beta_function.tcc \
+ /usr/include/c++/13.2.1/tr1/ell_integral.tcc \
+ /usr/include/c++/13.2.1/tr1/exp_integral.tcc \
+ /usr/include/c++/13.2.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/13.2.1/tr1/legendre_function.tcc \
+ /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc

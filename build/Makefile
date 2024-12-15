@@ -129,6 +129,30 @@ search_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/build
 .PHONY : search_engine/fast
 
+src/bm25.o: src/bm25.cpp.o
+.PHONY : src/bm25.o
+
+# target to build an object file
+src/bm25.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/src/bm25.cpp.o
+.PHONY : src/bm25.cpp.o
+
+src/bm25.i: src/bm25.cpp.i
+.PHONY : src/bm25.i
+
+# target to preprocess a source file
+src/bm25.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/src/bm25.cpp.i
+.PHONY : src/bm25.cpp.i
+
+src/bm25.s: src/bm25.cpp.s
+.PHONY : src/bm25.s
+
+# target to generate assembly for a file
+src/bm25.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/search_engine.dir/build.make CMakeFiles/search_engine.dir/src/bm25.cpp.s
+.PHONY : src/bm25.cpp.s
+
 src/inverted_index.o: src/inverted_index.cpp.o
 .PHONY : src/inverted_index.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... search_engine"
+	@echo "... src/bm25.o"
+	@echo "... src/bm25.i"
+	@echo "... src/bm25.s"
 	@echo "... src/inverted_index.o"
 	@echo "... src/inverted_index.i"
 	@echo "... src/inverted_index.s"

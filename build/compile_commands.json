@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/root/search-engine/build",
+  "command": "/usr/bin/g++  -I/root/search-engine/include -g -std=gnu++17 -o CMakeFiles/search_engine.dir/src/main.cpp.o -c /root/search-engine/src/main.cpp",
+  "file": "/root/search-engine/src/main.cpp",
+  "output": "CMakeFiles/search_engine.dir/src/main.cpp.o"
+},
+{
+  "directory": "/root/search-engine/build",
+  "command": "/usr/bin/g++  -I/root/search-engine/include -g -std=gnu++17 -o CMakeFiles/search_engine.dir/src/inverted_index.cpp.o -c /root/search-engine/src/inverted_index.cpp",
+  "file": "/root/search-engine/src/inverted_index.cpp",
+  "output": "CMakeFiles/search_engine.dir/src/inverted_index.cpp.o"
+},
+{
+  "directory": "/root/search-engine/build",
+  "command": "/usr/bin/g++  -I/root/search-engine/include -g -std=gnu++17 -o CMakeFiles/search_engine.dir/src/bm25.cpp.o -c /root/search-engine/src/bm25.cpp",
+  "file": "/root/search-engine/src/bm25.cpp",
+  "output": "CMakeFiles/search_engine.dir/src/bm25.cpp.o"
+}
+]

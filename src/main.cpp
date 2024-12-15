@@ -9,25 +9,25 @@ int main(){
 	index.addDocument(103, "Wireless mouse for gaming");
 	index.addDocument(104, "Wired keyboard for office work");
 
-	std::vector<int> result1 = index.searchTerm("wireless");
-	std::vector<int> result2 = index.searchTerm("mouse");
-	std::vector<int> result3 = index.searchTerm("gaming");
+	std::unordered_map<int, int> result1 = index.searchTerm("wireless");
+	std::unordered_map<int, int> result2 = index.searchTerm("mouse");
+	std::unordered_map<int, int> result3 = index.searchTerm("gaming");
 
 	std::cout << "Documents containing 'wireless': ";
-	for( int docId : result1) {
-		std::cout << docId << " ";
+	for( const auto& [docId, freq] : result1) {
+		std::cout << "(Doc Id: " << docId << ", Frequency: " << freq << ") ";
 	}
 	std::cout << "\n";
 
 	std::cout << "Documents containing 'mouse': ";
-	for( int docId : result2) {
-		std::cout << docId << " ";
+	for( const auto& [docId, freq] : result2) {
+		std::cout << "(Doc Id: " << docId << ", Frequency: " << freq << ") ";
 	}
 	std::cout << "\n";
 
 	std::cout << "Documents containing 'gaming': ";
-	for( int docId : result3) {
-		std::cout << docId << " ";
+	for( const auto& [docId, freq] : result3) {
+		std::cout << "(Doc Id: " << docId << ", Frequency: " << freq << ") ";
 	}
 	std::cout << "\n";
 }
